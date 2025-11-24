@@ -46,17 +46,9 @@
 
     .container { max-width: 1100px; margin: 0 auto; }
 
-    /* ===== IMÁGENES Y CABECERA (Actualizado para ver la portada completa) ===== */
-    .banner-img {
-      width: 100%;
-      height: auto; /* Altura automática para mostrar toda la imagen */
-      display: block;
-      border-radius: var(--border-radius);
-      margin-bottom: 25px;
-      box-shadow: var(--shadow-md);
-      border: 1px solid #e2e8f0;
-    }
-
+    /* ===== ESTILOS DE CABECERA (Imagen de portada eliminada) ===== */
+    
+    /* Estilo para la tarjeta de encabezado que ahora es la parte superior */
     .header-card {
       background: var(--bg-card);
       border-radius: var(--border-radius);
@@ -64,6 +56,8 @@
       margin-bottom: 30px;
       box-shadow: var(--shadow-sm);
       border: 1px solid #e2e8f0;
+      /* Añadido un pequeño margen superior ya que ahora es el primer elemento */
+      margin-top: 10px; 
     }
 
     .header-top {
@@ -280,11 +274,6 @@
 <body>
 
   <div class="container">
-
-    <img 
-      src="https://raw.githubusercontent.com/jhansaldana/eventos-medicos/main/CCW%20PORTADA.png"
-      alt="CCW Banner"
-      class="banner-img">
 
     <div class="header-card">
       <div class="header-top">
