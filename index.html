@@ -18,7 +18,7 @@
   </script>
 
   <style>
-    /* ===== VARIABLES Y RESET (Estilo Code 2) ===== */
+    /* ===== VARIABLES Y RESET (Estilo Blanco/Celeste) ===== */
     :root {
       --primary: #0284c7;       /* Azul Celeste Oscuro */
       --primary-light: #e0f2fe; /* Celeste muy claro para fondos */
@@ -46,12 +46,11 @@
 
     .container { max-width: 1100px; margin: 0 auto; }
 
-    /* ===== IMÁGENES Y CABECERA ===== */
+    /* ===== IMÁGENES Y CABECERA (Actualizado para ver la portada completa) ===== */
     .banner-img {
       width: 100%;
-      height: auto;
-      max-height: 220px;
-      object-fit: cover;
+      height: auto; /* Altura automática para mostrar toda la imagen */
+      display: block;
       border-radius: var(--border-radius);
       margin-bottom: 25px;
       box-shadow: var(--shadow-md);
@@ -247,7 +246,7 @@
     @keyframes spin { 0% { transform: rotate(0deg);} 100%{ transform: rotate(360deg);} }
     .error { background: #fef2f2; border: 1px solid #fca5a5; border-radius: var(--border-radius); padding: 20px; color: #991b1b; }
 
-    /* ===== SECCIÓN PREVENCIÓN (De Code 2) ===== */
+    /* ===== SECCIÓN PREVENCIÓN ===== */
     .vulnerable-section {
       background: #ffffff; border: 1px solid #bae6fd;
       border-left: 5px solid var(--primary); border-radius: var(--border-radius);
@@ -308,8 +307,8 @@
         <p>
           Academic agenda for Critical Care, ECMO, and Simulation. Consolidating global learning opportunities in <strong>Lima Time (GMT-5)</strong>.
         </p>
-        <a href="https://www.instagram.com/ccw_criticalcarewebinars" target="_blank" rel="noopener" class="social-link">
-          <i class="fa-brands fa-instagram"></i> Follow @ccw_criticalcarewebinars
+        <a href="https://www.instagram.com/ccw_critalcarewebinars?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="social-link">
+          <i class="fa-brands fa-instagram"></i> Follow on Instagram
         </a>
       </div>
     </div>
@@ -573,12 +572,11 @@
   </div>
 
   <script>
-    // ===== DATA CONFIGURATION (From Code 1) =====
+    // ===== DATA CONFIGURATION =====
     const BASE_SHEET_CSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSgscb3CQReXXkS1S7Sgj_e-COWBuQ38YO-eJ9Cr3wOvV8MCPGFt-s-01KLNkCpi00zqFnMvMsL4zTi/pub?gid=0&single=true&output=csv';
     
-    // Updated IDs for Nov 24-30
     const GID_SHEET_CURRENT = '1245803309'; 
-    const GID_SHEET_PREV = '592880085'; // Using previous week from Code 1 list
+    const GID_SHEET_PREV = '592880085';
 
     const WEEKS = [
       {
